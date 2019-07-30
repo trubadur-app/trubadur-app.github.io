@@ -10,7 +10,6 @@ html, body {
 
 html {
     background-color: #2C2C2C;
-    min-width: 1000px;
 }
 
 #contentWrapper {
@@ -67,7 +66,7 @@ img {
     box-shadow: 3px 3px 2px #232323;
 }
 
-a {
+#downloadButton, #readMoreButton {
     float: left;
     width: 300px;
     
@@ -88,6 +87,40 @@ a {
     text-decoration: none;
 }
 
-a:hover {
+#downloadButton:hover {
     opacity: 0.8;
+}
+
+#downloadButton {
+    display: block;
+}
+
+#readMoreButton {
+    display: none;
+}
+
+@media only screen and (max-width: 999px) {
+    #contentWrapper {
+        width: 100%;
+        position: static;
+        margin-left: 0;
+    }
+
+    p {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    label, img {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    #downloadButton {
+        display: none;
+    }
+    
+    #readMoreButton {
+        display: block;
+    }
 }
