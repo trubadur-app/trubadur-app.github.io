@@ -19,6 +19,29 @@
         <link rel="stylesheet" type="text/css" href="styles/main.css" />
 
         <title>Trubadur App</title>
+
+        <script>
+            function handleSelectorClick(e, imageId) {
+                var selectedElement = e.target;
+                var imageSelectorWrapper = selectedElement.parentNode;
+
+                var allSelectorItems = imageSelectorWrapper.querySelectorAll("div");
+
+                for (var i = 0; i < allSelectorItems.length; i++) {
+                    allSelectorItems[i].classList.remove("active");
+                }
+
+                var imageWrapper = imageSelectorWrapper.parentNode;
+                var allImageItems = imageWrapper.querySelectorAll("a");
+
+                for (var i = 0; i < allImageItems.length; i++) {
+                    allImageItems[i].classList.remove("active");
+                }
+
+                selectedElement.classList.add("active");
+                document.getElementById(imageId).classList.add("active");
+            }
+        </script>
     </head>
     <body>
         <div id="cookieWrapper">
@@ -36,25 +59,37 @@
                 </p>
     
                 <label>View your songs in the song library. Categorize into playlists, search, label or filter.</label>
-                <div class="imageWrapper"><a href="images/song-overview1.png"><img src="images/song-overview1.png" /></a></div>
+                <div class="imageWrapper">
+                    <a id="songOverviewImage1" class="active" href="images/song-overview1.png"><img src="images/song-overview1.png" /></a>
+                    <a id="songOverviewImage2" href="images/song-overview2.png"><img src="images/song-overview2.png" /></a>
+                    <a id="songOverviewImage3" href="images/song-overview3.png"><img src="images/song-overview3.png" /></a>
+                    <a id="songOverviewImage4" href="images/song-overview4.png"><img src="images/song-overview4.png" /></a>
+
+                    <div class="imageSelector">
+                        <div class="active" onclick="handleSelectorClick(event, 'songOverviewImage1')">1</div>
+                        <div onclick="handleSelectorClick(event, 'songOverviewImage2')">2</div>
+                        <div onclick="handleSelectorClick(event, 'songOverviewImage3')">3</div>
+                        <div onclick="handleSelectorClick(event, 'songOverviewImage4')">4</div>
+                    </div>
+                </div>
     
                 <label>Add or edit your songs.</label>
-                <div class="imageWrapper"><a href="images/edit-song.png"><img src="images/edit-song.png" /></a></div>
+                <div class="imageWrapper"><a class="active" href="images/edit-song.png"><img src="images/edit-song.png" /></a></div>
     
                 <label>Select which songs to play.</label>
-                <div class="imageWrapper"><a href="images/song-overview5.png"><img src="images/song-overview5.png" /></a></div>
+                <div class="imageWrapper"><a class="active" href="images/song-overview5.png"><img src="images/song-overview5.png" /></a></div>
     
                 <label>Display selected songs. Add notes and transpose. Change font-size and number of tabs. Play selected songs with or without randomized order.</label>
-                <div class="imageWrapper"><a href="images/song-display1.png"><img src="images/song-display1.png" /></a></div>
+                <div class="imageWrapper"><a class="active" href="images/song-display1.png"><img src="images/song-display1.png" /></a></div>
     
                 <label>Go to the Perform view mode. Keep track of the time spent, see upcoming songs and view your notes.</label>
-                <div class="imageWrapper"><a href="images/song-display2.png"><img src="images/song-display2.png" /></a></div>
+                <div class="imageWrapper"><a class="active" href="images/song-display2.png"><img src="images/song-display2.png" /></a></div>
     
                 <label>Go to the Clean view mode to only show the song text.</label>
-                <div class="imageWrapper"><a href="images/song-display3.png"><img src="images/song-display3.png" /></a></div>
+                <div class="imageWrapper"><a class="active" href="images/song-display3.png"><img src="images/song-display3.png" /></a></div>
     
                 <label>View your songs through the browser for a mobile or tablet experience.</label>
-                <div class="imageWrapper"><a href="images/read-only.png"><img src="images/read-only.png" /></a></div>
+                <div class="imageWrapper"><a class="active" href="images/read-only.png"><img src="images/read-only.png" /></a></div>
     
                 <div id="buttonWrapper">
                     <a id="downloadButton" href="https://github.com/trubadur-app/trubadur#license">Download trubadur</a>

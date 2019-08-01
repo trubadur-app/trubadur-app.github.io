@@ -39,7 +39,7 @@ html {
     padding-right: 40px;
 }
 
-h1, p, label, img, .imageWrapper, .imageWrapper a, #buttonWrapper {
+h1, p, label, img, .imageWrapper, .imageWrapper a, .imageSelector, #buttonWrapper {
     float: left;
     width: 100%;
 }
@@ -91,6 +91,40 @@ label {
     margin-bottom: 15px;
 
     text-align: justify;
+}
+
+.imageWrapper a {
+    display: none;
+}
+
+.imageWrapper a.active {
+    display: block;
+}
+
+.imageSelector {
+    display: flex;
+
+    padding: 10px;
+    padding-left: 30%;
+    padding-right: 30%;
+}
+
+.imageSelector div {
+    width: 100%;
+    padding: 5px;
+
+    color: #EEEEEE;
+    text-align: center;
+
+    background-color: #262626;
+}
+
+.imageSelector div.active {
+    background-color: #E87C10;
+}
+
+.imageSelector div:hover {
+    cursor: pointer;
 }
 
 img {
@@ -152,6 +186,11 @@ img {
         padding-right: 20px;
     }
 
+    .imageSelector {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
     #downloadButton {
         display: none;
     }
@@ -161,7 +200,7 @@ img {
         
         float: left;
         width: 100%;
-        
+
         position: static;
         margin: 0;
     }
