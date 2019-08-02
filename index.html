@@ -98,8 +98,25 @@
                 <label>Go to the Clean view mode to only show the song text.</label>
                 <div class="imageWrapper"><a class="active" href="images/song-display5.png"><img src="images/song-display5.png" /></a></div>
     
-                <label>View your songs through the browser for a mobile or tablet experience.</label>
+                <label>View your songs through the browser on desktop or tablet.</label>
                 <div class="imageWrapper"><a class="active" href="images/read-only.png"><img src="images/read-only.png" /></a></div>
+
+                <label class="mobile">View your songs through mobile browser.</label>
+                <div class="imageWrapper mobile">
+                    <a id="mobileBrowserImage1" class="active" href="images/mobile1.jpg"><img src="images/mobile1.jpg" /></a>
+                    <a id="mobileBrowserImage2" href="images/mobile2.jpg"><img src="images/mobile2.jpg" /></a>
+                    <a id="mobileBrowserImage3" href="images/mobile3.jpg"><img src="images/mobile3.jpg" /></a>
+                    <a id="mobileBrowserImage4" href="images/mobile4.jpg"><img src="images/mobile4.jpg" /></a>
+                    <a id="mobileBrowserImage5" href="images/mobile5.jpg"><img src="images/mobile5.jpg" /></a>
+
+                    <div class="imageSelector">
+                        <div class="active" onclick="handleSelectorClick(event, 'mobileBrowserImage1')">1</div>
+                        <div onclick="handleSelectorClick(event, 'mobileBrowserImage2')">2</div>
+                        <div onclick="handleSelectorClick(event, 'mobileBrowserImage3')">3</div>
+                        <div onclick="handleSelectorClick(event, 'mobileBrowserImage4')">4</div>
+                        <div onclick="handleSelectorClick(event, 'mobileBrowserImage5')">5</div>
+                    </div>
+                </div>
     
                 <div id="buttonWrapper">
                     <a id="downloadButton" href="https://github.com/trubadur-app/trubadur#license">Download trubadur</a>

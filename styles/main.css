@@ -93,6 +93,15 @@ label {
     text-align: justify;
 }
 
+label.mobile, .imageWrapper.mobile {
+    padding-left: 310px;
+    padding-right: 310px;
+}
+
+.imageWrapper.mobile img {
+    border: 1px solid #2A2A2A;
+}
+
 .imageWrapper a {
     display: none;
 }
@@ -125,6 +134,11 @@ label {
 
 .imageSelector div:hover {
     cursor: pointer;
+}
+
+.imageWrapper.mobile .imageSelector {
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 img {
@@ -184,6 +198,11 @@ img {
     label, .imageWrapper, #buttonWrapper {
         padding-left: 20px;
         padding-right: 20px;
+    }
+
+    label.mobile, .imageWrapper.mobile {
+        padding-left: 50px;
+        padding-right: 50px;
     }
 
     .imageSelector {
