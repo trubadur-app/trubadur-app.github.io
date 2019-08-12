@@ -18,7 +18,9 @@
         <link href="https://fonts.googleapis.com/css?family=Lato:300,400&display=swap" rel="stylesheet" />
         <link rel="stylesheet" type="text/css" href="styles/main.css" />
 
-        <title>Trubadur App</title>
+        <title>Trubadur App - A FREE software for editing your song lyrics and chords</title>
+
+        <meta name="description" content="An Open Source and FREE software for editing your lyrics and guitar chords/tabs. Created for musicians and performers for a good desktop, mobile and tablet experience.">
 
         <script>
             function handleSelectorClick(e, imageId) {
@@ -60,10 +62,10 @@
     
                 <label>View your songs in the song library. Categorize into playlists, search, label or filter.</label>
                 <div class="imageWrapper">
-                    <a id="songOverviewImage1" class="active" href="images/song-overview1.png"><img src="images/song-overview1.png" /></a>
-                    <a id="songOverviewImage2" href="images/song-overview2.png"><img src="images/song-overview2.png" /></a>
-                    <a id="songOverviewImage3" href="images/song-overview3.png"><img src="images/song-overview3.png" /></a>
-                    <a id="songOverviewImage4" href="images/song-overview4.png"><img src="images/song-overview4.png" /></a>
+                    <a id="songOverviewImage1" class="active" href="images/song-overview1.png"><img src="images/song-overview1.png" alt="List of songs" /></a>
+                    <a id="songOverviewImage2" href="images/song-overview2.png"><img src="images/song-overview2.png" alt="List of songs with label filter" /></a>
+                    <a id="songOverviewImage3" href="images/song-overview3.png"><img src="images/song-overview3.png" alt="List of songs with search text" /></a>
+                    <a id="songOverviewImage4" href="images/song-overview4.png"><img src="images/song-overview4.png" alt="List of songs with selected playlist" /></a>
 
                     <div class="imageSelector">
                         <div class="active" onclick="handleSelectorClick(event, 'songOverviewImage1')">1</div>
@@ -74,16 +76,16 @@
                 </div>
     
                 <label>Add or edit your songs.</label>
-                <div class="imageWrapper"><a class="active" href="images/edit-song.png"><img src="images/edit-song.png" /></a></div>
+                <div class="imageWrapper"><a class="active" href="images/edit-song.png"><img src="images/edit-song.png" alt="Change song content" /></a></div>
     
                 <label>Select which songs to play.</label>
-                <div class="imageWrapper"><a class="active" href="images/song-overview5.png"><img src="images/song-overview5.png" /></a></div>
+                <div class="imageWrapper"><a class="active" href="images/song-overview5.png"><img src="images/song-overview5.png" alt="Select songs to play" /></a></div>
     
                 <label>Display selected songs. Add notes and transpose. Change font-size and number of tabs. Play selected songs with or without randomized order. Show chords. Select recommended chords.</label>
                 <div class="imageWrapper">
-                    <a id="songDisplayImage1" class="active" href="images/song-display1.png"><img src="images/song-display1.png" /></a>
-                    <a id="songDisplayImage2" href="images/song-display2.png"><img src="images/song-display2.png" /></a>
-                    <a id="songDisplayImage3" href="images/song-display3.png"><img src="images/song-display3.png" /></a>
+                    <a id="songDisplayImage1" class="active" href="images/song-display1.png"><img src="images/song-display1.png" alt="Display songs in normal view mode" /></a>
+                    <a id="songDisplayImage2" href="images/song-display2.png"><img src="images/song-display2.png" alt="Click chords to see how to play them" /></a>
+                    <a id="songDisplayImage3" href="images/song-display3.png"><img src="images/song-display3.png" alt="Select recommended chords" /></a>
 
                     <div class="imageSelector">
                         <div class="active" onclick="handleSelectorClick(event, 'songDisplayImage1')">1</div>
@@ -93,21 +95,21 @@
                 </div>
     
                 <label>Go to the Perform view mode. Keep track of the time spent, see upcoming songs and view your notes.</label>
-                <div class="imageWrapper"><a class="active" href="images/song-display4.png"><img src="images/song-display4.png" /></a></div>
+                <div class="imageWrapper"><a class="active" href="images/song-display4.png"><img src="images/song-display4.png" alt="Display songs in perform view mode" /></a></div>
     
                 <label>Go to the Clean view mode to only show the song text.</label>
-                <div class="imageWrapper"><a class="active" href="images/song-display5.png"><img src="images/song-display5.png" /></a></div>
+                <div class="imageWrapper"><a class="active" href="images/song-display5.png"><img src="images/song-display5.png" alt="Display songs in clean view mode" /></a></div>
     
                 <label>View your songs through the browser on desktop or tablet.</label>
-                <div class="imageWrapper"><a class="active" href="images/read-only.png"><img src="images/read-only.png" /></a></div>
+                <div class="imageWrapper"><a class="active" href="images/read-only.png"><img src="images/read-only.png" alt="View songs in browser" /></a></div>
 
                 <label class="mobile">View your songs through mobile browser.</label>
                 <div class="imageWrapper mobile">
-                    <a id="mobileBrowserImage1" class="active" href="images/mobile1.jpg"><img src="images/mobile1.jpg" /></a>
-                    <a id="mobileBrowserImage2" href="images/mobile2.jpg"><img src="images/mobile2.jpg" /></a>
-                    <a id="mobileBrowserImage3" href="images/mobile3.jpg"><img src="images/mobile3.jpg" /></a>
-                    <a id="mobileBrowserImage4" href="images/mobile4.jpg"><img src="images/mobile4.jpg" /></a>
-                    <a id="mobileBrowserImage5" href="images/mobile5.jpg"><img src="images/mobile5.jpg" /></a>
+                    <a id="mobileBrowserImage1" class="active" href="images/mobile1.jpg"><img src="images/mobile1.jpg" alt="Song list in mobile browser" /></a>
+                    <a id="mobileBrowserImage2" href="images/mobile2.jpg"><img src="images/mobile2.jpg" alt="Song filtering options in mobile browser" /></a>
+                    <a id="mobileBrowserImage3" href="images/mobile3.jpg"><img src="images/mobile3.jpg" alt="Selected song in mobile browser" /></a>
+                    <a id="mobileBrowserImage4" href="images/mobile4.jpg"><img src="images/mobile4.jpg" alt="Display song in mobile browser" /></a>
+                    <a id="mobileBrowserImage5" href="images/mobile5.jpg"><img src="images/mobile5.jpg" alt="Change view preferences in mobile browser" /></a>
 
                     <div class="imageSelector">
                         <div class="active" onclick="handleSelectorClick(event, 'mobileBrowserImage1')">1</div>
