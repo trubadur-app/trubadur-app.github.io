@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+
+        <style>
+            @font-face {
+                font-family: Lato;
+                src: url("Lato-Regular.ttf");
+            }
+
+            @font-face {
+                font-family: Lato;
+                src: url("Lato-Light.ttf");
+                font-weight: 300;
+            }
+
+            @font-face {
+                font-family: Lato;
+                src: url("Lato-Hairline.ttf");
+                font-weight: 200;
+            }
+
+            @font-face {
+                font-family: Lato;
+                src: url("Lato-Bold.ttf");
+                font-weight: bold;
+            }
+
+            @font-face {
+                font-family: Lato;
+                src: url("Lato-Black.ttf");
+                font-weight: 500;
+            }
+        </style>
+        <link rel="icon" type="image/png" href="favicon.png" />
+        <link rel="stylesheet" type="text/css" href="main.css">
+
+        <title>Trubadur Read Only</title>
+    </head>
+    <body>
+        <div id="root" class="readOnly"></div>
+    </body>
+
+    <script type="text/javascript">
+        var trubadurGlobalState = {
+            readOnlyData: {
+                view: 0,
+                songs: [],
+                playlists: [],
+                labels: []
+            },
+            shouldAddMacros: false,
+			isReadOnly: true
+        };
+
+        var sendBroadcast = function() {};
+    </script>
+    <script type="text/javascript" src="build.js"></script>
+</html>
